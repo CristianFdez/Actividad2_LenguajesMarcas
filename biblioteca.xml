@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <biblioteca>
     <libros>
         <libro id="L0001" tipo_clase="novela" num_paginas_libro="254" >
