@@ -1,0 +1,69 @@
+<!-- Estructura ROOT biblioteca -->
+<!ELEMENT biblioteca (libros, revistas, periodicos)>
+
+
+<!-- Estructura de las categorias: libros, revistas, periodicos -->
+<!ELEMENT libros (libro+)>
+<!ELEMENT revistas (revista+)>
+<!ELEMENT periodicos (periodico+)>
+
+
+<!-- Elementos simples -->
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT indice (#PCDATA)> 
+<!ELEMENT sinopsis (#PCDATA)>
+<!ELEMENT contenido (#PCDATA)>
+<!ELEMENT num_revista (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)> 
+<!ELEMENT articulo (#PCDATA)>
+
+
+<!-- Estructura de la sub-categoria libro -->
+<!ELEMENT libro (titulo, capitulos)>
+<!ELEMENT capitulos (capitulo+)>
+<!ELEMENT capitulo (indice, sinopsis, contenido)>
+
+
+<!-- Estructura de la sub-categoria revista-->
+<!ELEMENT revista (titulo, num_revista, indice, secciones)>
+<!ELEMENT secciones (seccion_revista+)>
+<!ELEMENT seccion_revista (nombre, contenido)>
+
+
+<!-- Estructura de la sub-categoria periodico-->
+<!ELEMENT periodico (titulo, seccion_periodico+)>
+<!ELEMENT seccion_periodico (articulos, contenido)>
+<!ELEMENT articulos (articulo+)>
+
+
+<!-- Atributos de la sub-categoria libro-->
+<!ATTLIST libro id_libro ID #REQUIRED>
+<!ATTLIST libro tipo_clase CDATA #REQUIRED>
+<!ATTLIST libro num_paginas_libro CDATA #REQUIRED>
+
+<!ATTLIST capitulo titulo CDATA #REQUIRED>
+<!ATTLIST capitulo num_paginas_cap CDATA #REQUIRED>
+
+<!ATTLIST contenido href CDATA #REQUIRED>
+
+
+<!-- Atributos de la sub-categoria revista -->
+<!ATTLIST revista id_revista ID #REQUIRED> 
+<!ATTLIST revista tipo_clase CDATA #REQUIRED>
+<!ATTLIST revista num_paginas_revista CDATA #REQUIRED>
+
+<!ATTLIST seccion_revista num_paginas_seccion CDATA #REQUIRED> 
+
+<!ATTLIST contenido href CDATA #REQUIRED>
+
+
+<!-- Atributos de la sub-categoria periodico -->
+<!ATTLIST periodico id_periodico ID #REQUIRED>
+<!ATTLIST periodico tipo_clase CDATA #REQUIRED>
+<!ATTLIST periodico fecha_publicacion CDATA #REQUIRED>
+
+<!ATTLIST seccion_periodico tipo_seccion CDATA #REQUIRED>
+
+<!ATTLIST articulo autor CDATA #REQUIRED>
+
+<!ATTLIST contenido href CDATA #REQUIRED>
