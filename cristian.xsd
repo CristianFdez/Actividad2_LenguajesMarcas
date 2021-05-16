@@ -32,8 +32,22 @@
                                             </xs:complexType>
                                         </xs:element>                                      
                                     </xs:sequence>
-                                    <xs:attribute name="id" type="xs:string"></xs:attribute>
-                                    <xs:attribute name="tipo_clase" type="xs:string"></xs:attribute>
+                                    <xs:attribute name="id">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="[L]\d{4}"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                    <xs:attribute name="tipo_clase">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="novela"></xs:enumeration>
+                                                <xs:enumeration value="infantil"></xs:enumeration>
+                                                <xs:enumeration value="libro_didáctico"></xs:enumeration>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
                                     <xs:attribute name="num_paginas_libro" type="xs:string"></xs:attribute>
                                 </xs:complexType>
                             </xs:element>
@@ -70,8 +84,24 @@
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
-                                    <xs:attribute name="id" type="xs:string"></xs:attribute>
-                                    <xs:attribute name="tipo_clase" type="xs:string"></xs:attribute>
+                                    <xs:attribute name="id">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="[R]\d{4}"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                    <xs:attribute name="tipo_clase">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="informática"></xs:enumeration>
+                                                <xs:enumeration value="corazón"></xs:enumeration>
+                                                <xs:enumeration value="coches"></xs:enumeration>
+                                                <xs:enumeration value="investigación"></xs:enumeration>
+                                                <xs:enumeration value="otras"></xs:enumeration>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
                                     <xs:attribute name="num_paginas_revista" type="xs:string"></xs:attribute>
                                 </xs:complexType>
                             </xs:element>
@@ -110,8 +140,21 @@
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
-                                    <xs:attribute name="id" type="xs:string"></xs:attribute>
-                                    <xs:attribute name="tipo_clase" type="xs:string"></xs:attribute>
+                                    <xs:attribute name="id">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="[P]\d{4}"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                    <xs:attribute name="tipo_clase">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="nacional"></xs:enumeration>
+                                                <xs:enumeration value="internacional"></xs:enumeration>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
                                     <xs:attribute name="fecha_publicacion" type="xs:date"></xs:attribute>
                                 </xs:complexType>
                             </xs:element>
