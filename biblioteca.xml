@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:noNamespaceSchemaLocation= "cristian.xsd">
+
+    <!--LIBROS-->
     <libros>
+
+        <!--NOVELA-->
         <libro id="L0001" tipo_clase="novela" num_paginas_libro="254" >
             <titulo>Harry Potter y la Piedra Filosofal</titulo>
             <capitulos>
@@ -17,6 +21,8 @@ xsi:noNamespaceSchemaLocation= "cristian.xsd">
                 </capitulo>
             </capitulos>
         </libro>
+
+        <!--INFANTIL-->
         <libro id="L0002" tipo_clase="infantil" num_paginas_libro="231">
             <titulo>Charlie y la fábrica de chocolate</titulo>
             <capitulos>
@@ -32,6 +38,8 @@ xsi:noNamespaceSchemaLocation= "cristian.xsd">
                 </capitulo>
             </capitulos>
         </libro>
+
+        <!--LIBRO DIDÁCTICO-->
         <libro id="L0003" tipo_clase="libro_didáctico" num_paginas_libro="92" >
             <titulo>Educando con magia</titulo>
             <capitulos>
@@ -48,7 +56,11 @@ xsi:noNamespaceSchemaLocation= "cristian.xsd">
             </capitulos>
         </libro>
     </libros>
+
+    <!--REVISTAS-->
     <revistas>
+
+        <!--INFORMÁTICA-->
         <revista id="R0001" tipo_clase="informática" num_paginas_revista="67">
             <titulo>PC World</titulo>
             <num_revista>3783</num_revista>
@@ -68,6 +80,8 @@ xsi:noNamespaceSchemaLocation= "cristian.xsd">
                 </seccion_revista>
             </secciones>
         </revista>
+
+        <!--CORAZÓN-->
         <revista id="R0002" tipo_clase="corazón" num_paginas_revista="120">
             <titulo>¡Hola!</titulo>
             <num_revista>10056345</num_revista>
@@ -87,6 +101,8 @@ xsi:noNamespaceSchemaLocation= "cristian.xsd">
                 </seccion_revista>
             </secciones>
         </revista>
+
+        <!--COCHES-->
         <revista id="R0003" tipo_clase="coches" num_paginas_revista="98">
             <titulo>Autobild</titulo>
             <num_revista>123</num_revista>
@@ -107,7 +123,11 @@ xsi:noNamespaceSchemaLocation= "cristian.xsd">
             </secciones>
         </revista>
     </revistas>
+
+    <!--PERIODICOS-->
     <periodicos>
+
+        <!--NACIONAL-->
         <periodico id="P0001" tipo_clase="nacional" fecha_publicacion="2021-03-17">
             <titulo>El Mundo</titulo>
             <seccion_periodico tipo_seccion="opinión">
@@ -119,6 +139,8 @@ xsi:noNamespaceSchemaLocation= "cristian.xsd">
                 <contenido href="https://www.elmundo.es/opinion.html"/>
             </seccion_periodico>
         </periodico>
+
+        <!--INTERNACIONAL-->
         <periodico id="P0002" tipo_clase="internacional" fecha_publicacion="2021-02-15">
             <titulo>El País</titulo>
             <seccion_periodico tipo_seccion="económica">
@@ -138,6 +160,8 @@ xsi:noNamespaceSchemaLocation= "cristian.xsd">
                 <contenido href="https://elpais.com/deportes/"/>
             </seccion_periodico>
         </periodico>
+
+        <!--INTERNACIONAL-->
         <periodico id="P0003" tipo_clase="internacional" fecha_publicacion="2021-05-17">
             <titulo>El Periódico</titulo>
             <seccion_periodico tipo_seccion="internacional">
