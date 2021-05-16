@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<xs:schema  version="1.0"
+            xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified">
+
+            <!-- Elementos simples -->
+            <xs:element name="titulo" type="xs:string"></xs:element>
+            <xs:element name="indice" type="xs:string"></xs:element>
+            <xs:element name="sinopsis" type="xs:string"></xs:element>
+            <xs:element name="contenido" type="xs:string"></xs:element>
+            <xs:element name="num_revista" type="xs:positiveInteger"></xs:element>
+
+            <!-- Atributos -->
+            <xs:attribute name="id_libro">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[L]\d{4}"></xs:pattern>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="id_revista">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[P]\d{4}"></xs:pattern>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="id_periodico">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[R]\d{4}"></xs:pattern>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="titulo" type="xs:string"></xs:attribute>
+            <xs:attribute name="autor" type="xs:string"></xs:attribute>
+            <xs:attribute name="tipo_clase" type="xs:string"></xs:attribute>
+            <xs:attribute name="tipo_seccion" type="xs:string"></xs:attribute>
+            <xs:attribute name="fecha_publicacion" type="xs:date"></xs:attribute>
+            <xs:attribute name="href" type="xs:string"></xs:attribute>
+            <xs:attribute name="num_paginas_libro" type="xs:positiveInteger"></xs:attribute>
+            <xs:attribute name="num_paginas_cap" type="xs:positiveInteger"></xs:attribute>
+            <xs:attribute name="num_paginas_revista" type="xs:positiveInteger"></xs:attribute>
+            <xs:attribute name="num_paginas_seccion" type="xs:positiveInteger"></xs:attribute>
+            
+            <!-- Elementos complejos -->
+            <xs:element name="capitulo">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="indice"/>
+                        <xs:element ref="sinopsis"/>
+                        <xs:element ref="contenido"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            
+
+</xs:schema>

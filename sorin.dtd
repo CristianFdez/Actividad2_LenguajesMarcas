@@ -14,7 +14,7 @@
 <!ELEMENT capitulos (capitulo)>
 <!ELEMENT capitulo (indice, sinposis, contenido)>
 <!ATTLIST capitulo titulo CDATA #REQUIRED>
-<!ATTLIST capititulo num_paginas_capitulo CDATA #REQUIRED>
+<!ATTLIST capitulo num_paginas_capitulo CDATA #REQUIRED>
 
 <!ELEMENT indice (#PCDATA)>
 <!ELEMENT sinopsis (#PCDATA)>
@@ -35,7 +35,7 @@
 <!ELEMENT secciones (seccion_revista)>
 
 <!ELEMENT seccion_revista (contenido)>
-<!ATTLIST seccion_revista num_paginas_revista CDATA #REQUIRED>
+<!ATTLIST seccion_revista num_paginas_seccion CDATA #REQUIRED>
 
 <!ELEMENT contenido (EMPTY)>
 <!ATTLIST contenido href CDATA #REQUIRED>
@@ -52,4 +52,4 @@
 
 <!ELEMENT articulos (articulo)>
 <!ELEMENT autor (EMPTY)>
-<!ATTLIST articulos autor CDATA #REQUIRED>
+<!ATTLIST articulo autor CDATA #REQUIRED>
