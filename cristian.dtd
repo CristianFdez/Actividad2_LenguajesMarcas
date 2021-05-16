@@ -12,7 +12,7 @@
 >
 
 <!ELEMENT titulo (#PCDATA)>
-<!ELEMENT capitulos (capitulo)>
+<!ELEMENT capitulos (capitulo+)>
 
 <!ELEMENT capitulo (indice, sinopsis, contenido)>
 <!ATTLIST capitulo 
@@ -22,7 +22,7 @@
 
 <!ELEMENT indice (#PCDATA)>
 <!ELEMENT sinopsis (#PCDATA)>
-<!ELEMENT contenido (EMPTY)>
+<!ELEMENT contenido (#PCDATA)>
 <!ATTLIST contenido href CDATA #REQUIRED>
 
 <!ELEMENT revista (titulo, num_revista, indice, secciones)>
@@ -33,22 +33,23 @@
 >
 
 <!ELEMENT num_revista (#PCDATA)>
-<!ELEMENT secciones (seccion_revista)>
+<!ELEMENT secciones (seccion_revista+)>
 
-<!ELEMENT seccion_revista (contenido)>
+<!ELEMENT seccion_revista (nombre, contenido)>
 <!ATTLIST seccion_revista num_pag_seccion CDATA #REQUIRED>
 
+<!ELEMENT nombre (#PCDATA)>
 
-<!ELEMENT periodico (titulo, seccion_periodico)>
+<!ELEMENT periodico (titulo, seccion_periodico+)>
 <!ATTLIST periodico 
     id ID #REQUIRED
     tipo_clase (nacional | internacional) #REQUIRED
-    num_paginas_revista CDATA #REQUIRED
+    fecha_publicacion CDATA #REQUIRED
 >
 
 <!ELEMENT seccion_periodico (articulos, contenido)>
 <!ATTLIST seccion_periodico tipo_seccion (económica | opinión | deportes | nacional | internacional) #REQUIRED>
 
-<!ELEMENT articulos (articulo)>
-<!ELEMENT articulo (EMPTY)>
+<!ELEMENT articulos (articulo+)>
+<!ELEMENT articulo (#PCDATA)>
 <!ATTLIST articulo autor CDATA #REQUIRED>
