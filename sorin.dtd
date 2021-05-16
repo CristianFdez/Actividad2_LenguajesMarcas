@@ -34,8 +34,10 @@
 <!ELEMENT indice (#PCDATA)>
 <!ELEMENT secciones (seccion_revista)>
 
-<!ELEMENT seccion_revista (contenido)>
+<!ELEMENT seccion_revista (contenido, nombre)>
 <!ATTLIST seccion_revista num_paginas_seccion CDATA #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>
 
 <!ELEMENT contenido (EMPTY)>
 <!ATTLIST contenido href CDATA #REQUIRED>
