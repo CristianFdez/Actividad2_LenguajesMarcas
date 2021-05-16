@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<biblioteca>
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation= "cristian.xsd">
     <libros>
         <libro id="L0001" tipo_clase="novela" num_paginas_libro="254" >
             <titulo>Harry Potter y la Piedra Filosofal</titulo>
@@ -53,13 +54,16 @@
             <num_revista>3783</num_revista>
             <indice>Lorem ipsum dolor sit amet</indice>
             <secciones>
-                <seccion_revista num_pag_seccion="12">Ordenadores de mesa 
+                <seccion_revista num_pag_seccion="12">
+                    <nombre>Ordenadores de mesa</nombre> 
                     <contenido href="https://www.pcworld.es/ordenadores/"/>
                 </seccion_revista>
-                <seccion_revista num_pag_seccion="27">Móviles
+                <seccion_revista num_pag_seccion="27">
+                    <nombre>Móviles</nombre>
                     <contenido href="https://www.pcworld.es/smartphones/"/>
                 </seccion_revista>
-                <seccion_revista num_pag_seccion="28">Portátiles
+                <seccion_revista num_pag_seccion="28">
+                    <nombre>Portátiles</nombre>
                     <contenido href="https://www.pcworld.es/tablets/"/>
                 </seccion_revista>
             </secciones>
@@ -69,13 +73,16 @@
             <num_revista>10056345</num_revista>
             <indice>Ut condimentum, nulla eget dictum tincidunt</indice>
             <secciones>
-                <seccion_revista num_pag_seccion="12">Actualidad 
+                <seccion_revista num_pag_seccion="12">
+                    <nombre>Actualidad</nombre>
                     <contenido href="https://www.hola.com/actualidad/"/>
                 </seccion_revista>
-                <seccion_revista num_pag_seccion="14">Belleza
+                <seccion_revista num_pag_seccion="14">
+                    <nombre>Belleza</nombre>
                     <contenido href="https://www.hola.com/belleza/"/>
                 </seccion_revista>
-                <seccion_revista num_pag_seccion="100">Casas Reales
+                <seccion_revista num_pag_seccion="100">
+                    <nombre>Casas Reales</nombre>
                     <contenido href="https://www.hola.com/realeza/"/>
                 </seccion_revista>
             </secciones>
@@ -85,20 +92,23 @@
             <num_revista>123</num_revista>
             <indice>Morbi condimentum orci ut nisi eleifend</indice>
             <secciones>
-                <seccion_revista num_pag_seccion="21">Lo último
+                <seccion_revista num_pag_seccion="21">
+                    <nombre>Lo último</nombre>
                     <contenido href="https://www.autobild.es/ultimo"/>
                 </seccion_revista>
-                <seccion_revista num_pag_seccion="24">Coches
+                <seccion_revista num_pag_seccion="24">
+                    <nombre>Coches</nombre>
                     <contenido href="https://www.autobild.es/coches"/>
                 </seccion_revista>
-                <seccion_revista num_pag_seccion="25">Fórmula 1
+                <seccion_revista num_pag_seccion="25">
+                    <nombre>Fórmula 1</nombre>
                     <contenido href="https://www.autobild.es/formula1"/>
                 </seccion_revista>
             </secciones>
         </revista>
     </revistas>
     <periodicos>
-        <periodico id="P0001" tipo_clase="nacional" fecha_publicacion="17/03/2021">
+        <periodico id="P0001" tipo_clase="nacional" fecha_publicacion="2021-03-17">
             <titulo>El Mundo</titulo>
             <seccion_periodico tipo_seccion="opinión">
                 <articulos>
@@ -109,7 +119,7 @@
                 <contenido href="https://www.elmundo.es/opinion.html"/>
             </seccion_periodico>
         </periodico>
-        <periodico id="P0002" tipo_clase="internacional" fecha_publicacion="15/02/2021">
+        <periodico id="P0002" tipo_clase="internacional" fecha_publicacion="2021-02-15">
             <titulo>El País</titulo>
             <seccion_periodico tipo_seccion="económica">
                 <articulos>
@@ -128,7 +138,7 @@
                 <contenido href="https://elpais.com/deportes/"/>
             </seccion_periodico>
         </periodico>
-        <periodico id="P0003" tipo_clase="internacional" fecha_publicacion="17/05/2021">
+        <periodico id="P0003" tipo_clase="internacional" fecha_publicacion="2021-05-17">
             <titulo>El Periódico</titulo>
             <seccion_periodico tipo_seccion="internacional">
                 <articulos>
