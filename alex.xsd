@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema">
-    <element name="Biblioteca">
+    <element name="biblioteca">
         <complexType>
             <sequence>
                 <element name="libros">
@@ -120,9 +120,12 @@
                                                     <element name="articulos">
                                                         <complexType>
                                                             <sequence>
-                                                                <element name="articulo" type="string" minOccurs="2" maxOccurs="unbounded"></element>
+                                                                <element name="articulo" minOccurs="1" maxOccurs="unbounded">
+                                                                    <complexType>                                                          
+                                                                        <attribute name="autor" type="string" use="required"></attribute>
+                                                                    </complexType>
+                                                                </element>
                                                             </sequence>
-                                                            <attribute name="autor" type="string" use="required"></attribute>
                                                         </complexType>
                                                     </element>
                                                     <element name="contenido">
