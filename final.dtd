@@ -1,0 +1,55 @@
+<!ELEMENT biblioteca (libros, revistas, periodicos)>
+
+<!ELEMENT libros (libro+)>
+<!ELEMENT revistas (revista+)>
+<!ELEMENT periodicos (periodico+)>
+
+<!ELEMENT libro (titulo, capitulos)>
+<!ATTLIST libro 
+    id ID #REQUIRED
+    tipo_clase (novela | infantil | libro_didáctico) #REQUIRED
+    num_paginas_libro CDATA #REQUIRED
+>
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT capitulos (capitulo+)>
+
+<!ELEMENT capitulo (indice, sinopsis, contenido)>
+<!ATTLIST capitulo 
+    titulo CDATA #REQUIRED
+    num_paginas_cap CDATA #REQUIRED
+>
+
+<!ELEMENT indice (#PCDATA)>
+<!ELEMENT sinopsis (#PCDATA)>
+<!ELEMENT contenido (#PCDATA)>
+<!ATTLIST contenido href CDATA #REQUIRED>
+
+<!ELEMENT revista (titulo, num_revista, indice, secciones)>
+<!ATTLIST revista 
+    id ID #REQUIRED
+    tipo_clase (informática | corazón | coches | investigación | otras) #REQUIRED
+    num_paginas_revista CDATA #REQUIRED
+>
+
+<!ELEMENT num_revista (#PCDATA)>
+<!ELEMENT secciones (seccion_revista+)>
+
+<!ELEMENT seccion_revista (nombre, contenido)>
+<!ATTLIST seccion_revista num_pag_seccion CDATA #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>
+
+<!ELEMENT periodico (titulo, seccion_periodico+)>
+<!ATTLIST periodico 
+    id ID #REQUIRED
+    tipo_clase (nacional | internacional) #REQUIRED
+    fecha_publicacion CDATA #REQUIRED
+>
+
+<!ELEMENT seccion_periodico (articulos, contenido)>
+<!ATTLIST seccion_periodico tipo_seccion (económica | opinión | deportes | nacional | internacional) #REQUIRED>
+
+<!ELEMENT articulos (articulo+)>
+<!ELEMENT articulo (#PCDATA)>
+<!ATTLIST articulo autor CDATA #REQUIRED>
