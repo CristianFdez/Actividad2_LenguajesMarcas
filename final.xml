@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation= "cristian.xsd">
+<!--   <!DOCTYPE biblioteca SYSTEM "alex.dtd">   -->
+
+    <!--LIBROS-->
+    <libros>
+
+        <!--NOVELA-->
+        <libro id="L0001" tipo_clase="novela" num_paginas_libro="254" >
+            <titulo>Harry Potter y la Piedra Filosofal</titulo>
+            <capitulos>
+                <capitulo titulo="El niño que sobrevivió" num_paginas_cap="13">
+                    <indice>Página 9-22</indice>
+                    <sinopsis>Harry Potter se ha quedado huérfano y vive en casa de sus tíos</sinopsis>
+                    <contenido href="https://harrypotter.fandom.com/es/wiki/Harry_Potter_y_la_piedra_filosofal#Cap.C3.ADtulo_1:_El_ni.C3.B1o_que_sobrevivi.C3.B3"/>
+                </capitulo>
+                <capitulo titulo="El vidrio que se desvaneció" num_paginas_cap="10">
+                    <indice>Página 23-33</indice>
+                    <sinopsis>10 años han pasado desde el primer capitulo. Harry tiene casi 11 años y vive en el armario debajo de las escaleras de casa de sus tíos</sinopsis>
+                    <contenido href="https://harrypotter.fandom.com/es/wiki/Harry_Potter_y_la_piedra_filosofal#Cap.C3.ADtulo_1:_El_ni.C3.B1o_que_sobrevivi.C3.B3"/>
+                </capitulo>
+            </capitulos>
+        </libro>
+
+        <!--INFANTIL-->
+        <libro id="L0002" tipo_clase="infantil" num_paginas_libro="231">
+            <titulo>Charlie y la fábrica de chocolate</titulo>
+            <capitulos>
+                <capitulo titulo="Aquí viene Charlie" num_paginas_cap="15">
+                    <indice>Página 6-21</indice>
+                    <sinopsis>Charlie es un niño de una familia pobre. Vive en un apequeña casa a las afueras de una gran ciudad con su madre, su padre, sus abuelos paternos llamados Joe y Josephine y sus abuelos maternos llamados George y Georgina.</sinopsis>
+                    <contenido href="https://html.rincondelvago.com/charlie-y-la-fabrica-de-chocolate_roald-dahl.html"/>
+                </capitulo>
+                <capitulo titulo="La fábrica del señor Willy Wonka" num_paginas_cap="22">
+                    <indice>Página 22-44</indice>
+                    <sinopsis>Como todas las noches después de cenar, Charlie fue a visitar a sus abuelos. Todas las noches que Charlie visitaba a ellos, estos le contaban siempre algo.</sinopsis>
+                    <contenido href="https://html.rincondelvago.com/charlie-y-la-fabrica-de-chocolate_roald-dahl.html"/>
+                </capitulo>
+            </capitulos>
+        </libro>
+
+        <!--LIBRO DIDÁCTICO-->
+        <libro id="L0003" tipo_clase="libro_didáctico" num_paginas_libro="92" >
+            <titulo>Educando con magia</titulo>
+            <capitulos>
+                <capitulo titulo="¿Cómo hacer salir el conejito de la chistera" num_paginas_cap="4">
+                    <indice>Página 2-6</indice>
+                    <sinopsis>Aprende a sacar al conejito del sombrerito</sinopsis>
+                    <contenido href="https://www.librosdemagia.com/catalogo/ver/113177-educando-con-magia.html"/>
+                </capitulo>
+                <capitulo titulo="¿Cómo hacer desaparecer el conejito en la chistera?" num_paginas_cap="10">
+                    <indice>Página 7-13</indice>
+                    <sinopsis>Aprende a meter otra vez el conejito en el sombrerito</sinopsis>
+                    <contenido href="https://www.librosdemagia.com/catalogo/ver/113177-educando-con-magia.html"/>
+                </capitulo>
+            </capitulos>
+        </libro>
+    </libros>
+
+    <!--REVISTAS-->
+    <revistas>
+
+        <!--INFORMÁTICA-->
+        <revista id="R0001" tipo_clase="informática" num_paginas_revista="67">
+            <titulo>PC World</titulo>
+            <num_revista>3783</num_revista>
+            <indice>Lorem ipsum dolor sit amet</indice>
+            <secciones>
+                <seccion_revista num_pag_seccion="12">
+                    <nombre>Ordenadores de mesa</nombre> 
+                    <contenido href="https://www.pcworld.es/ordenadores/"/>
+                </seccion_revista>
+                <seccion_revista num_pag_seccion="27">
+                    <nombre>Móviles</nombre>
+                    <contenido href="https://www.pcworld.es/smartphones/"/>
+                </seccion_revista>
+                <seccion_revista num_pag_seccion="28">
+                    <nombre>Portátiles</nombre>
+                    <contenido href="https://www.pcworld.es/tablets/"/>
+                </seccion_revista>
+            </secciones>
+        </revista>
+
+        <!--CORAZÓN-->
+        <revista id="R0002" tipo_clase="corazón" num_paginas_revista="120">
+            <titulo>¡Hola!</titulo>
+            <num_revista>10056345</num_revista>
+            <indice>Ut condimentum, nulla eget dictum tincidunt</indice>
+            <secciones>
+                <seccion_revista num_pag_seccion="12">
+                    <nombre>Actualidad</nombre>
+                    <contenido href="https://www.hola.com/actualidad/"/>
+                </seccion_revista>
+                <seccion_revista num_pag_seccion="14">
+                    <nombre>Belleza</nombre>
+                    <contenido href="https://www.hola.com/belleza/"/>
+                </seccion_revista>
+                <seccion_revista num_pag_seccion="100">
+                    <nombre>Casas Reales</nombre>
+                    <contenido href="https://www.hola.com/realeza/"/>
+                </seccion_revista>
+            </secciones>
+        </revista>
+
+        <!--COCHES-->
+        <revista id="R0003" tipo_clase="coches" num_paginas_revista="98">
+            <titulo>Autobild</titulo>
+            <num_revista>123</num_revista>
+            <indice>Morbi condimentum orci ut nisi eleifend</indice>
+            <secciones>
+                <seccion_revista num_pag_seccion="21">
+                    <nombre>Lo último</nombre>
+                    <contenido href="https://www.autobild.es/ultimo"/>
+                </seccion_revista>
+                <seccion_revista num_pag_seccion="24">
+                    <nombre>Coches</nombre>
+                    <contenido href="https://www.autobild.es/coches"/>
+                </seccion_revista>
+                <seccion_revista num_pag_seccion="25">
+                    <nombre>Fórmula 1</nombre>
+                    <contenido href="https://www.autobild.es/formula1"/>
+                </seccion_revista>
+            </secciones>
+        </revista>
+    </revistas>
+
+    <!--PERIODICOS-->
+    <periodicos>
+
+        <!--NACIONAL-->
+        <periodico id="P0001" tipo_clase="nacional" fecha_publicacion="2021-03-17">
+            <titulo>El Mundo</titulo>
+            <seccion_periodico tipo_seccion="opinión">
+                <articulos>
+                    <articulo autor="P.Gonzalez"/>
+                    <articulo autor="Pepito Grillo"/>
+                    <articulo autor="Chispita Garcia"/>
+                </articulos>
+                <contenido href="https://www.elmundo.es/opinion.html"/>
+            </seccion_periodico>
+        </periodico>
+
+        <!--INTERNACIONAL-->
+        <periodico id="P0002" tipo_clase="internacional" fecha_publicacion="2021-02-15">
+            <titulo>El País</titulo>
+            <seccion_periodico tipo_seccion="económica">
+                <articulos>
+                    <articulo autor="Eusebio"/>
+                    <articulo autor="Eugenio"/>
+                    <articulo autor="Mudito"/>
+                </articulos>
+                <contenido href="https://elpais.com/economia/"/>
+            </seccion_periodico>
+            <seccion_periodico tipo_seccion="deportes">
+                <articulos>
+                    <articulo autor="Tio Gilito"/>
+                    <articulo autor="Reina Letizia"/>
+                    <articulo autor="Hulk"/>
+                </articulos>
+                <contenido href="https://elpais.com/deportes/"/>
+            </seccion_periodico>
+        </periodico>
+
+        <!--INTERNACIONAL-->
+        <periodico id="P0003" tipo_clase="internacional" fecha_publicacion="2021-05-17">
+            <titulo>El Periódico</titulo>
+            <seccion_periodico tipo_seccion="internacional">
+                <articulos>
+                    <articulo autor="P.H.R."/>
+                    <articulo autor="Suco"/>
+                    <articulo autor="Olivia Newton-John"/>
+                </articulos>
+                <contenido href="https://www.elperiodico.com/es/internacional/"/>
+            </seccion_periodico>
+            <seccion_periodico tipo_seccion="deportes">
+                <articulos>
+                    <articulo autor="Iker Casillas"/>
+                    <articulo autor="Simeone"/>
+                    <articulo autor="Ronaldinho"/>
+                </articulos>
+                <contenido href="https://www.elperiodico.com/es/deportes/"/>
+            </seccion_periodico>
+        </periodico>
+    </periodicos>
+</biblioteca>
