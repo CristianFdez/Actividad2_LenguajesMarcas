@@ -25,9 +25,7 @@
 <!ATTLIST revista tipo_clase (informatica | corazon | coches | investigacion | otras) #REQUIRED>
 <!ATTLIST revista num_pags_revista CDATA #REQUIRED>
 
-<!ELEMENT titulo (#PCDATA)>
 <!ELEMENT num_revista (#PCDATA)>
-<!ELEMENT indice (#PCDATA)>
 <!ELEMENT secciones (seccion_revista+)>
 
 <!ELEMENT seccion_revista (nombre, contenido)>
