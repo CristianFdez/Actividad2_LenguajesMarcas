@@ -44,7 +44,7 @@
                                             <restriction base="string">
                                                 <enumeration value="novela"></enumeration>
                                                 <enumeration value="infantil"></enumeration>
-                                                <enumeration value="libro_didactico"></enumeration>
+                                                <enumeration value="libro_didáctico"></enumeration>
                                             </restriction>
                                         </simpleType>
                                     </attribute>
@@ -93,10 +93,10 @@
                                     <attribute name="tipo_clase" use="required">
                                         <simpleType>
                                             <restriction base="string">
-                                                <enumeration value="informatica"></enumeration>
-                                                <enumeration value="corazon"></enumeration>
+                                                <enumeration value="informática"></enumeration>
+                                                <enumeration value="corazón"></enumeration>
                                                 <enumeration value="coches"></enumeration>
-                                                <enumeration value="investigacion"></enumeration>
+                                                <enumeration value="investigación"></enumeration>
                                                 <enumeration value="otras"></enumeration>
                                             </restriction>
                                         </simpleType>
@@ -110,7 +110,7 @@
                 <element name="periodicos">
                     <complexType>
                         <sequence>
-                            <element name="periodico">
+                            <element name="periodico" minOccurs="1" maxOccurs="unbounded">
                                 <complexType>
                                     <sequence>
                                         <element name="titulo" type="string"></element>
@@ -137,8 +137,8 @@
                                                 <attribute name="tipo_seccion" use="required">
                                                     <simpleType>
                                                         <restriction base="string">
-                                                            <enumeration value="economica"></enumeration>
-                                                            <enumeration value="opinion"></enumeration>
+                                                            <enumeration value="económica"></enumeration>
+                                                            <enumeration value="opinión"></enumeration>
                                                             <enumeration value="deportes"></enumeration>
                                                             <enumeration value="nacional"></enumeration>
                                                             <enumeration value="internacional"></enumeration>
